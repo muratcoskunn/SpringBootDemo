@@ -12,4 +12,5 @@ public interface ICityDal extends JpaRepository<City,Integer> {
     List<City> getByName(@Param("name") String name);
     @Query("Select c from City c where c.id =:id")
     City findById(@Param("id")int id);
+    List<City> getByCountry(String code);
 }

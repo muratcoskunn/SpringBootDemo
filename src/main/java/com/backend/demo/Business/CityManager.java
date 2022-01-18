@@ -31,4 +31,9 @@ public class CityManager implements ICityService {
     public City findById(int id) {
         return cityDal.findById(id);
     }
+
+    @Override
+    public List<City> getByCountry(String code) {
+        return cityDal.getByCountry(code);
+    }
 }

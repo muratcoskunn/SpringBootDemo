@@ -14,19 +14,20 @@ import javax.persistence.*;
 public class City {
 
     @Id
-    @Column(name="ID")
+    @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name="Name")
     private String name;
 
-    @Column(name="countrycode")
-    private String countryCode;
-
     @Column(name="District")
     private String district;
 
     @Column(name="Population")
     private long population;
+
+    @ManyToOne()
+    @JoinColumn(name="countrycode")
+    private Country country;
 }

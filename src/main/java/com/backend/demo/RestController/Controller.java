@@ -33,4 +33,8 @@ public class Controller {
     public City findById(@RequestParam int id){
         return cityService.findById(id);
     }
+    @GetMapping("/getByCountry")
+    public List<City> getByCountry(@RequestParam String code){
+        return cityService.getByCountry(code);
+    }
 }

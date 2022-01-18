@@ -8,4 +8,5 @@ public interface ICityService {
     public List<City> getAll();
     public List<City> getByName(String name);
     City findById(int id);
+    List<City> getByCountry(String code);
 }
