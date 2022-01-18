@@ -2,6 +2,7 @@ package com.backend.demo.Business;
 
 import com.backend.demo.Dal.ICityDal;
 import com.backend.demo.Entities.City;
+import com.backend.demo.Entities.Country;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,6 +35,17 @@ public class CityManager implements ICityService {
 
     @Override
     public List<City> getByCountry(String code) {
-        return cityDal.getByCountry(code);
+        return cityDal.getByCountryCountryCode(code);
+
+    }
+
+    @Override
+    public List<City> getByCountryName(String name) {
+        return cityDal.getByCountryName(name);
+    }
+
+    @Override
+    public List<Country> getCountries() {
+        return cityDal.getCountries();
     }
 }
