@@ -5,6 +5,7 @@ import com.backend.demo.Entities.City;
 import com.backend.demo.Entities.Country;
 import org.hibernate.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public class Controller {
     ICityService cityService;
 
     @Autowired
-    public Controller(ICityService cityService) {
+    public Controller(@Qualifier("cityManager")ICityService cityService) {
         this.cityService = cityService;
     }
 
