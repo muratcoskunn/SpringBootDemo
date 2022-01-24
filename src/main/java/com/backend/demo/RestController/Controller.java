@@ -17,7 +17,7 @@ public class Controller {
     ICityService cityService;
 
     @Autowired
-    public Controller(@Qualifier("cityManager")ICityService cityService) {
+    public Controller(ICityService cityService) {
         this.cityService = cityService;
     }
 
