@@ -1,4 +1,4 @@
-package com.backend.demo.Business;
+package com.backend.demo.Business.Abstract;
 
 import com.backend.demo.Entities.City;
 import com.backend.demo.Entities.Country;

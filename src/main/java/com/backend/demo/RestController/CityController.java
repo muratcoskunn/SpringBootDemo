@@ -1,11 +1,9 @@
 package com.backend.demo.RestController;
 
-import com.backend.demo.Business.ICityService;
+import com.backend.demo.Business.Abstract.ICityService;
 import com.backend.demo.Entities.City;
 import com.backend.demo.Entities.Country;
-import org.hibernate.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

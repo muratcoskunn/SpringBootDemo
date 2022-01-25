@@ -1,5 +1,6 @@
 package com.backend.demo.Entities;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import javax.persistence.*;
 @Table(name="city")
 @AllArgsConstructor
 @NoArgsConstructor
-public class City {
+public class City  {
 
     @Id
     @Column(name="id")

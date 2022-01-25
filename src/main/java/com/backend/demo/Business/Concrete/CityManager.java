@@ -1,11 +1,10 @@
-package com.backend.demo.Business;
+package com.backend.demo.Business.Concrete;
 
+import com.backend.demo.Business.Abstract.ICityService;
 import com.backend.demo.Dal.ICityDal;
 import com.backend.demo.Entities.City;
 import com.backend.demo.Entities.Country;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

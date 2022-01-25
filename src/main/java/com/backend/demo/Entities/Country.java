@@ -1,5 +1,6 @@
 package com.backend.demo.Entities;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,13 +15,14 @@ import java.util.List;
 @Entity
 @Table(name="country")
 @JsonIgnoreProperties({"hibernateLazyInitializer","handler","cities"})
-public class Country {
+public class Country  {
     @Id
     @Column(name="countrycode")
     private String countryCode;
 
     @Column(name="Name")
     private String name;
+
 
     @Column(name="Continent")
     private String continent;
