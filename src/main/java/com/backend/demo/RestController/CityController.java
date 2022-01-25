@@ -12,12 +12,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/city")
-public class Controller {
+public class CityController {
 
     ICityService cityService;
 
     @Autowired
-    public Controller(ICityService cityService) {
+    public CityController(ICityService cityService) {
         this.cityService = cityService;
     }
 
